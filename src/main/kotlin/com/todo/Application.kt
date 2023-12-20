@@ -1,18 +1,18 @@
 package com.todo
 
 import io.micronaut.runtime.Micronaut.run
-import io.swagger.v3.oas.annotations.*
-import io.swagger.v3.oas.annotations.info.*
+import io.swagger.v3.oas.annotations.OpenAPIDefinition
+import io.swagger.v3.oas.annotations.info.Info
 
 @OpenAPIDefinition(
     info = Info(
-            title = "Todo",
-            version = "0.0"
+        title = "Micronaut Todo - JL",
+        version = "1.0"
     )
 )
 object Api {
 }
-fun main(args: Array<String>) {
-	run(*args)
-}
 
+fun main() {
+    run()
+}
